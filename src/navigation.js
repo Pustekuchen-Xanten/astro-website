@@ -119,7 +119,6 @@ export const headerData = {
       href: '#',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
@@ -177,7 +176,6 @@ export const footerData = {
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
