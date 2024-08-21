@@ -3,7 +3,11 @@ import { SITE } from 'astrowind:config';
 ---
 
 <span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+  class="self-center ml-2 rtl:ml-0 rtl:mr-2 whitespace-nowrap"
 >
-  🚀 {SITE?.name}
+  <!-- Light mode logo -->
+  <img src="https://goneuland.de/wp-content/uploads/2022/02/goNeuland-v3-1-600dpi-RGB.png" alt="{SITE?.name} Logo" class="h-8 md:h-6 dark:hidden"/>
+
+  <!-- Dark mode logo -->
+  <img src="https://test.sohn.uk/web1/wp-content/uploads/2024/08/puku_cropped-scaled.webp" alt="{SITE?.name} Dark Mode Logo" class="h-8 md:h-6 hidden dark:inline"/>
 </span>
