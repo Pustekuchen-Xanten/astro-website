@@ -1,0 +1,100 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Pustekuchen website with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- Note Widget ******************* -->
+
+ 
+
+  <!-- Features Widget *************** -->
+
+
+
+  <!-- Content Widget **************** -->
+
+
+  <!-- Content Widget **************** -->
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Pustekuchen ABC"
+    subtitle="Provides frequently used components for building websites using Tailwind CSS"
+    tagline="das wichtigste von a bis z"
+    items={[
+      {
+        title: 'Anmeldung',
+        description: "Möchten Sie, Verwandte oder Bekannte Ihr Kind im PUSTEKUCHEN anmelden? Dies ist immer dienstags von 15.30 – 16.30 Uhr oder nach telefonischer Vereinbarung möglich.",
+        icon: 'tabler:circle-dashed-letter-a',
+      },
+      {
+        title: 'Heros',
+        description:
+          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+        icon: 'tabler:circle-dotted-letter-b',
+      },
+      {
+        title: 'Features',
+        description:
+          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        icon: 'tabler:circle-letter-b-filled',
+      },
+      {
+        title: 'Content',
+        description:
+          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Call-to-Action',
+        description:
+          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: 'Pricing',
+        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      {
+        title: 'Testimonial',
+        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Contact',
+        description:
+          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        icon: 'flat-color-icons:business-contact',
+      },
+      {
+        title: 'Footers',
+        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        icon: 'flat-color-icons:database',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  
+</Layout>

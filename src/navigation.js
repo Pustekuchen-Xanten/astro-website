@@ -3,11 +3,15 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Willkommen',
+      href: '/',
+    },
+    {
+      text: 'Über',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Pustekuchen',
+          href: getPermalink('/#features'),
         },
         {
           text: 'Test',
@@ -24,39 +28,6 @@ export const headerData = {
         {
           text: 'Personal',
           href: getPermalink('/homes/personal'),
-        },
-      ],
-    },
-    {
-      text: 'Pages',
-      links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
         },
       ],
     },
@@ -113,10 +84,6 @@ export const headerData = {
           href: getPermalink('astro', 'tag'),
         },
       ],
-    },
-    {
-      text: 'Widgets',
-      href: '#',
     },
   ],
 };

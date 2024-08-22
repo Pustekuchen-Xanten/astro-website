@@ -11,6 +11,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
 
 const metadata = {
   title: 'Pustekuchen website with Astro + Tailwind CSS',
@@ -25,22 +26,21 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Erfahre mehr',
+        href: '#inside',
+        icon: 'tabler:circle-check',
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/slider-2.jpg', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Herzlich Willkommen<span class="hidden xl:inline"> im</span>
-      <span class="text-accent dark:text-white highlight"> Pustekuchen</span> Kindergarten in Xanten.
+      Herzlich Willkommen im
+      <span class="text-purple-500 dark:text-accent highlight"> Pustekuchen</span> – dem <span class="text-red-500 dark:text-green-500 highlight">Elterninitiativkindergarten</span> in <span class="text-blue-400 dark:text-blue-500 highlight">Xanten</span>.
     </Fragment>
     <span class="text-accent dark:text-white highlight">kreatives</span>
     <Fragment slot="subtitle">
-        <span class="font-semibold">Unser vielseitig – kreatives pädagogisches Konzept lässt uns ihr Kind mit all seinen Bedürfnissen und Wünschen sehen.</span><p> <span class="text-accent dark:text-white highlight"></span> Durch eine klare Kommunikation auf Augenhöhe und gezieltes Mitwirken der Kinder, werden sie in ihrer Entwicklung begleitet und unterstützt.</p> </span>
+        <span class="font-bold font-sans text-blue-900  dark:text-white">Unser vielseitig – kreatives pädagogisches Konzept lässt uns ihr Kind mit all seinen Bedürfnissen und Wünschen sehen.</span><p> <span class="text-accent dark:text-white highlight"></span> <span class="font-semibold font-sans text-blue-900 dark:text-white">Durch eine klare Kommunikation auf Augenhöhe und gezieltes Mitwirken der Kinder, werden sie in ihrer Entwicklung begleitet und unterstützt.</span></p> </span>
         <br></br>
 
     </Fragment>
@@ -48,51 +48,36 @@ const metadata = {
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    tagline="Das sind wir"
+    title="Bewegung und Literatur als Grundsäule"
+    subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Literaturkindergarten',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          'Als Literaturkindergarten präsentieren wir den Kindern ein vielfältiges Sortiment an Büchern, darunter Bilderbücher, Vorlesebücher, Sach- und Wissensbücher und vieles mehr. Unser Ziel ist es, gemeinsam mit den Kindern in fesselnde Geschichten einzutauchen und diese als Schlüssel zur Entdeckung der Welt zu nutzen.',
         icon: 'tabler:book',
+        color: 'text-red-100 bg-red-500', // Example color
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Bewegungskindergarten',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:arrow-forward-up-double',
+          'Bewegungskindergärten sind spezielle Tageseinrichtungen für Kinder, die sich darauf konzentrieren, Bewegung, Psychomotorik und Umweltsensibilisierung gezielt in den täglichen Kindergartenablauf zu integrieren.',
+        icon: 'tabler:run',
+        color: 'text-blue-100 bg-blue-500', // Example color
       },
       {
-        title: 'Best Practices',
+        title: 'Buchkindergarten',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Das Gütesiegel Buchkita zeichnet Kindertagesstätten aus, die sich aktiv in der Leseförderung und der Lese- sowie Sprachentwicklung von Kindern engagieren. In diesen Kitas nehmen die frühkindlichen Erfahrungen mit Büchern, Erzählungen, Reimen und Schriftkultur einen zentralen Platz im pädagogischen Konzept ein.',
+        icon: 'tabler:books',
+        color: 'text-green-100 bg-green-500', // Example color
       },
     ]}
   />
@@ -100,28 +85,29 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
+    id="inside"
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Speiseplan"
+    title="Hier wird täglich frisch gekocht"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'täglich frisch',
         description:
           'Benefiting from the performance and developer-friendly features of this modern static site generator.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'kinder gestalten speiseplan',
         description:
           'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Cobst und gemüsesnacks',
         description:
           'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/Speisepla.webp',
       alt: 'Colorful Image',
     }}
   >
@@ -213,24 +199,31 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Das Besondere am Pustekuchen ist die Elterninitiative"
+    tagline="Die vier Kernpunkte der Elterninitative"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Punkt 1',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "Unser Kindergarten ist eine von Eltern selbst organisierte Kindertageseinrichtung in gemeinnütziger Trägerschaft. Wir können flexibel und initiativ auf veränderte gesellschaftliche Verhältnisse reagieren.",
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Punkt 2',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          "Durch den vertrauensvollen Austausch zwischen Eltern und Team entsteht bei den Kindern ein Gefühl der Geborgenheit und Sicherheit. Als Eltern kann man sich untereinander austauschen, sich gegenseitig helfen und gemeinsam Feste feiern!",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Punkt 3',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'Eltern bekommen einen klaren Einblick in das Kita-Leben und bringen sich im Rahmen ihrer zeitlichen Möglichkeiten, Interessen und Fertigkeiten ein.',
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Punkt 4',
+        description:
+          'Als eingetragener gemeinnütziger Verein erheben wir pro Kind/pro Familie einen monatlichen Beitrag von 26Euro. Die Mitglieder der Elterninitiative haben festgelegt, dass Eltern pro Jahre an 4 Aktionssamstagen teilnehmen, um die Einrichtung bei allen anfallenden Arbeiten (Gartenarbeiten, kleinere Renovierungsarbeiten etc.) zu unterstützen.',
         icon: 'tabler:paint',
       },
       {
@@ -239,7 +232,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: '~/assets/images/bauklotz.jpg',
       alt: 'Steps image',
     }}
   />
@@ -310,51 +303,33 @@ const metadata = {
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
-
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="Das wichtigste Über uns"
+    subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    tagline="kurz und bündig"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Unser Konzept',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "Der pädagogische Ansatz ist der rote Faden, der sich durch die Kindergartenarbeit zieht und Ausgangspunkt aller Entscheidungen, die getroffen werden. In der Pädagogik findet man eine Reihe nebeneinander stehender Ansätze. Im „PUSTEKUCHEN“ haben wir uns für den Begriff “ Situationsorientierte Pädagogik“ entschieden, da dieser Überbegriff für verschiedene subjektive und lebensweltorientierte pädagogische Ansätze steht.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'Unser Tagesablauf',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Der Kindergarten-Pustekuchen bietet mit seiner täglichen Öffnungszeit von 7:30 -16:45 Uhr sowohl die Betreuung am Vormittag, als auch über Mittag mit anschließendem Nachmittagsprogramm an. Alle Kinder sollten bis um 9:00 Uhr gebracht sein, danach beginnt der offizielle Tag im Kindergarten.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Elterninitiative –„Wir machen mit!“',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "Der Kindergarten Pustekuchen ist ein ELTERNINITIATIVKINDERGARTEN und lebt daher vom Engagement und der Mithilfe seiner Mitglieder und Förderer. Also von den Menschen, die durch ihre Arbeit im und um den Kindergarten diesen zu etwas Besonderem machen. Die Eltern unterstützen dies durch ihren Einsatz bei den verschiedenen Aufgaben im Kindergarten.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: "Sonstiges Bla Bla",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
       },
     ]}
   />
@@ -369,6 +344,42 @@ const metadata = {
       { title: 'Users', amount: '48.4K' },
     ]}
   />
+  <!-- contact *********** -->
+  <Features2
+  title="Nehme Kontakt mit uns auf"
+  tagline="Sie haben weitere Fragen, melden Sie sich gerne bei uns."
+  items={[
+    {
+      title: 'Generale Fragen',
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.`,
+    },
+    {
+      title: 'Anfragen',
+      description:
+        'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+    },
+    {
+      title: 'Sonstiges',
+      description:
+        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+    },
+    {
+      title: 'Telefon',
+      description: '+49 (2801) 55-00',
+      icon: 'tabler:phone',
+    },
+    {
+      title: 'Email',
+      description: 'info@pustekuchen-xanten.de',
+      icon: 'tabler:mail',
+    },
+    {
+      title: 'Anschrift',
+      description: 'Fildersteg 9a, 46509 Xanten',
+      icon: 'tabler:map-pin',
+    },
+  ]}
+/>
 
   <!-- CallToAction Widget *********** -->
 
