@@ -58,6 +58,7 @@ export const footerData = {
     { text: 'Impressum', href: getPermalink('/terms') },
     { text: 'Datenschutzerklärung', href: getPermalink('/privacy') },
     { text: 'Cookies', href: getPermalink('/cookies') },
+    { text: 'Open Source', href: getPermalink('/opensource') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
