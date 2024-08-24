@@ -57,6 +57,7 @@ export const footerData = {
   secondaryLinks: [
     { text: 'Impressum', href: getPermalink('/terms') },
     { text: 'Datenschutzerklärung', href: getPermalink('/privacy') },
+    { text: 'Cookies', href: getPermalink('/cookies') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
