@@ -19,7 +19,7 @@ E-Mail: [info@pustekuchen-xanten.de](mailto:info@pustekuchen-xanten.de)
 
 Tobias Steltner
 
-## Verbraucherstreitbeilegung/Universalschlichtungsstelle
+## Verbraucherstreitbeilegung / Universalschlichtungsstelle
 
 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 

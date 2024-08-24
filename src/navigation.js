@@ -55,7 +55,7 @@ export const headerData = {
 export const footerData = {
 
   secondaryLinks: [
-    { text: 'Impressum', href: getPermalink('/terms') },
+    { text: 'Impressum', href: getPermalink('/impress') },
     { text: 'Datenschutzerklärung', href: getPermalink('/privacy') },
     { text: 'Cookies', href: getPermalink('/cookies') },
     { text: 'Open Source', href: getPermalink('/opensource') },

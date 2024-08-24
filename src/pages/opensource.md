@@ -1,5 +1,5 @@
 ---
-title: 'opensource'
+title: 'Open Source'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
