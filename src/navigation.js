@@ -10,78 +10,42 @@ export const headerData = {
       text: 'Über',
       links: [
         {
-          text: 'Pustekuchen',
-          href: getPermalink('/#features'),
+          text: 'Das sind wir',
+          href: getPermalink('/#about'),
         },
         {
-          text: 'Test',
-          href: getPermalink('/test'),
+          text: 'unser Team',
+          href: getPermalink('/team'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Elterninitiative',
+          href: getPermalink('/#elternini'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
+          text: 'ABC',
+          href: getPermalink('/#abc'),
         },
         {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
-    },
-    {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
+          text: 'Kurz und Bündig',
+          href: getPermalink('/#konzept'),
         },
         {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
+          text: 'Kontakt',
+          href: getPermalink('/#kontakt'),
         },
       ],
     },
     {
-      text: 'Blog',
+      text: 'Speiseplan',
+      href: getPermalink('/#speiseplan'),
+    },
+
+    {
+      text: 'Aktuelles',
       links: [
         {
-          text: 'Blog List',
+          text: 'Blog',
           href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
         },
       ],
     },
@@ -101,6 +65,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
-    © 2024 Pustekuchen. Theme by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · Licensed under the MIT License. Source Code available on <a class="text-blue-600 underline dark:text-muted" href="https://github.com/">GitHub</a>.
+    © 2024 Pustekuchen. Theme by <a class="underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · Licensed under the MIT License. Source Code available on <a class="text-black underline dark:text-muted" href="https://github.com/">GitHub</a>.
   `,
 };
