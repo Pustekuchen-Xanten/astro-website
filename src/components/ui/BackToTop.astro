@@ -1,5 +1,4 @@
 ---
-// components/ui/BackToTop.astro
 ---
 
 <button
@@ -7,26 +6,47 @@
   class="fixed bottom-2 right-2 bg-gray-300 text-black text-3xl p-2 px-4 rounded-md transition-opacity duration-300 opacity-0 pointer-events-none"
   aria-label="Back to Top"
 >
-↑
+  ↑
 </button>
-<script>
-  // Show or hide the button based on scroll position
-  window.addEventListener('scroll', () => {
+<script type="module">
+  function initBackToTop() {
     const button = document.getElementById('back-to-top');
-    if (window.pageYOffset > 300) {
-      button.classList.remove('opacity-0', 'pointer-events-none');
-      button.classList.add('opacity-100');
-    } else {
-      button.classList.remove('opacity-100');
-      button.classList.add('opacity-0', 'pointer-events-none');
+    if (!button) {
+      console.error('Back to Top button not found.');
+      return;
     }
-  });
 
-  // Attach the scroll-to-top functionality to the button
-  document.getElementById('back-to-top').addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
+    // Function to toggle button visibility
+    function toggleButtonVisibility() {
+      if (window.pageYOffset > 300) {
+        button.classList.remove('opacity-0', 'pointer-events-none');
+        button.classList.add('opacity-100');
+      } else {
+        button.classList.remove('opacity-100');
+        button.classList.add('opacity-0', 'pointer-events-none');
+      }
+    }
+
+    // Initial check to set button visibility
+    toggleButtonVisibility();
+
+    // Update visibility on scroll
+    window.addEventListener('scroll', toggleButtonVisibility);
+
+    // Scroll to top functionality
+    button.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
     });
-  });
+  }
+
+  // Listen for Astro page load events and initialize the Back to Top button
+  if (typeof Astro !== 'undefined' && Astro) {
+    Astro.onLoad(initBackToTop);
+  } else {
+    // Fallback for direct page loads
+    document.addEventListener('DOMContentLoaded', initBackToTop);
+  }
 </script>
