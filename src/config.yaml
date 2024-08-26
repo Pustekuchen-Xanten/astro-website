@@ -1,7 +1,7 @@
 site:
   name: Pustekuchen
-  site: 'https://pustekuchen-xanten.de'
-  base: '/dist'
+  site: 'https://2tap2.be'
+  base: '/'
   trailingSlash: false
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
