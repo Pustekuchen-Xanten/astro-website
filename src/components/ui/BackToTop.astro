@@ -1,5 +1,5 @@
 ---
-// components/ui/BackToTop.astro
+/* components/ui/BackToTop.astro */
 ---
 
 <a
@@ -10,6 +10,7 @@
 >
   <b>↑</b>
 </a>
+
 <script>
   function toggleButtonVisibility() {
     const button = document.getElementById('back-to-top');
@@ -40,5 +41,14 @@
   document.addEventListener('DOMContentLoaded', () => {
     toggleButtonVisibility(); // Initial check
     window.addEventListener('scroll', toggleButtonVisibility);
+
+    const button = document.getElementById('back-to-top');
+    button.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent default anchor behavior
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll to top
+      });
+    });
   });
 </script>

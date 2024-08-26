@@ -3,31 +3,36 @@ title: 'Open Source'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-## Über das Astro Framework
+## Technik, die begeistert: Über das Astro Framework
 
-Astro ist ein modernes Web-Framework, das speziell für die Erstellung von schnellen, statischen Websites entwickelt wurde. Es ermöglicht es Entwicklern, Inhalte effizient zu erstellen und zu verwalten, indem es nur den absolut notwendigen Code an den Browser sendet. So wird sichergestellt, dass Ihre Website so schnell und ressourcenschonend wie möglich ist.
+Unsere Website wurde mit einer modernen Technik namens Astro entwickelt. Dieses System sorgt dafür, dass die Seiten, die Sie sehen, besonders schnell und effizient sind. Wie funktioniert das? Astro erstellt sogenannte statische Websites. Das bedeutet, dass die Seiten bereits fertig sind, bevor sie auf Ihren Bildschirm geladen werden. Dadurch braucht die Website weniger Ressourcen und lädt schneller.
 
 ![image](https://pustekuchen-xanten.de/images/code.png)
-### Vorteile von Astro
 
-- **Statische Generierung:** Astro erstellt statische HTML-Seiten, was bedeutet, dass Ihre Website schnell lädt und einfach zu hosten ist. Es werden keine unnötigen JavaScript-Bundles an den Nutzer gesendet, wodurch die Seite extrem performant bleibt.
-  
-- **Kompromisslos Modular:** Astro unterstützt die Verwendung beliebiger JavaScript-Frameworks wie React, Vue, Svelte und viele andere, ohne dass diese die Leistung beeinträchtigen. Sie können das Beste aus verschiedenen Tools kombinieren, ohne auf Geschwindigkeit verzichten zu müssen.
+### Die Vorteile von Astro für unsere Website
 
-- **Minimaler JavaScript Overhead:** Astro sendet standardmäßig kein JavaScript an den Client, es sei denn, Sie entscheiden sich explizit dafür. Dies macht Ihre Seite leicht und schnell, perfekt für User, die schnelle Ladezeiten schätzen.
+- **Blitzschnelles Laden:** Da die Seiten bereits vorab erstellt werden, müssen sie nicht erst in Ihrem Browser zusammengesetzt werden. Das spart Zeit und Ihre Seite lädt blitzschnell.
 
-- **SEO-Optimierung:** Durch die statische Natur von Astro sind die generierten Seiten von Haus aus suchmaschinenfreundlich. Die Inhalte sind sofort lesbar und indizierbar, was die SEO-Leistung Ihrer Website verbessert.
+- **Minimaler technischer Aufwand:** Astro verwendet nur die Technik, die wirklich nötig ist. Das bedeutet, dass Ihre Daten geschont werden und die Seite weniger störanfällig ist.
 
-### Open Source und Community
+- **Flexibel und anpassbar:** Auch wenn wir unterschiedliche Tools und Techniken verwenden, bleibt die Seite schnell und stabil. So können wir die besten Werkzeuge nutzen, ohne die Leistung der Seite zu beeinträchtigen.
 
-Astro ist ein Open-Source-Projekt und wird von einer engagierten Community von Entwicklern weltweit unterstützt. Die Offenheit des Projekts ermöglicht es Ihnen, das Framework nach Ihren eigenen Bedürfnissen anzupassen und sogar zur Weiterentwicklung beizutragen.
+- **Suchmaschinenfreundlich:** Durch die Art und Weise, wie Astro arbeitet, sind unsere Inhalte besonders gut für Suchmaschinen sichtbar. Das hilft dabei, dass unsere Seite leichter im Internet gefunden wird.
 
-### Unser Projekt auf GitHub
+### Offen für alle: Unser Engagement in der Open-Source-Community
 
-Auch diese Website wurde mit Astro entwickelt und ist komplett Open Source. Den gesamten Quellcode finden Sie auf GitHub. Wir laden Sie ein, einen Blick darauf zu werfen und vielleicht sogar selbst mitzuwirken. Hier ist der [Link zum Repository](https://github.com/DeinGithubLink).
+Astro ist ein sogenanntes Open-Source-Projekt. Das bedeutet, dass der Quellcode für alle zugänglich ist und von Entwicklern weltweit verbessert werden kann. Auch unsere Website ist komplett Open Source. Wenn Sie möchten, können Sie den Code auf GitHub ansehen und vielleicht sogar selbst etwas dazu beitragen. Hier finden Sie den [Link zum Repository](https://github.com/DeinGithubLink).
 
-### Unser Design: Astro Wind von onWidget
+### Ein modernes Design mit Astro Wind
 
-Für das Design dieser Website verwenden wir das [Astro Wind Theme](https://onwidget.com/) von onWidget. Dieses Theme bietet ein modernes, minimalistisch gestaltetes Design und ist perfekt auf die Bedürfnisse von Astro-Websites abgestimmt. Es integriert sich nahtlos in den Astro-Workflow und unterstützt die schnelle Entwicklung ansprechender Websites.
+Für das Aussehen unserer Website haben wir das [Astro Wind Theme](https://onwidget.com/) verwendet. Dieses Design ist perfekt auf Astro-Websites abgestimmt und ermöglicht es uns, schnell und einfach eine ansprechende Website zu gestalten.
 
-Wir sind stolz darauf, moderne Web-Technologien zu nutzen, um Ihnen eine schnelle, sichere und transparente Website bieten zu können.
+Mit diesen modernen Techniken sorgen wir dafür, dass unsere Website nicht nur schön aussieht, sondern auch schnell, sicher und transparent ist – damit Ihr Besuch bei uns so angenehm wie möglich ist.
+
+### Technische Realisierung
+
+**Tobias Steltner**
+
+Kontakt:
+
+[tobias@steltner.cloud](mailto:tobias@steltner.cloud)
