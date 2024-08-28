@@ -36,4 +36,4 @@ Haben Sie Ideen oder Anmerkungen? Wir freuen uns auf Ihre Beiträge! Jeder ist e
 
 ## Lizenz
 
-Die Pustekuchen-Kindergarten-Webseite steht unter der MIT-Lizenz — siehe die [LICENSE](./LICENSE.md) Datei für Details.
+Die Pustekuchen-Kindergarten-Webseite steht unter der MIT-Lizenz — siehe die [LICENSE](./LICENSE.md) Datei für Details..
