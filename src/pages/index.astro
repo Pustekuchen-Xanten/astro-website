@@ -7,6 +7,7 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
+import Content2 from '~/components/widgets/Content2.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -31,23 +32,63 @@ const metadata = {
         icon: 'tabler:circle-check',
       },
       { text: 'Zum Speiseplan', href: '#speiseplan', icon: 'tabler:salad' },
+      
     ]}
     image={{ src: '~/assets/images/slider-2.jpg', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Herzlich Willkommen im
-      <span class="text-purple-500 dark:text-accent highlight"> Pustekuchen</span><span class="text-red-500 dark:text-green-500 highlight"> Kindergarten</span> in <span class="text-blue-400 dark:text-blue-500 highlight">Xanten</span>.
+      <span class="text-blue-600">Herzlich</span> <span class="text-red-600"> Willkommen</span> <span class="text-yellow-400"> im</span> <span class="text-green-600"> Pustekuchen</span>
     </Fragment>
-    <span class="text-accent dark:text-white highlight">kreatives</span>
-    <Fragment slot="subtitle">
-        <span class="font-bold font-poppins text-blue-900  dark:text-white">Unser vielseitig – kreatives pädagogisches Konzept lässt uns ihr Kind mit all seinen Bedürfnissen und Wünschen sehen.</span><p> <span class="text-accent dark:text-white highlight"></span> <span class="font-semibold font-poppins text-blue-900 dark:text-white">Durch eine klare Kommunikation auf Augenhöhe und gezieltes Mitwirken der Kinder, werden sie in ihrer Entwicklung begleitet und unterstützt.</span></p> </span>
-        <br></br>
 
+    <Fragment slot="subtitle">
+        <span class="font-black font-poppins text-black  dark:text-white">dem Elterninitiativkindergarten in Xanten<p> <span class="text-accent dark:text-white highlight"></span> <span class="font-bold font-poppins text-black dark:text-white"><br>Wir sind ausgezeichneter <span class="text-blue-600">Bewegungs-</span> und <span class="text-red-600">Literaturkindergarten</span> und dürfen den Titel <span class="text-yellow-400">Buchkita</span> tragen.</br></br> Unser vielseitig – kreatives pädagogisches Konzept lässt uns ihr Kind mit all seinen Bedürfnissen und Wünschen sehen. <br><br>Durch eine klare Kommunikation auf Augenhöhe und gezieltes Mitwirken der Kinder, werden sie in ihrer Entwicklung begleitet und unterstützt.</br></br></span> </span></p> </span>
+        <span><br></br></span>
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
+<!-- Steps Widget ****************** -->
+
+<Steps
+id="elternini"
+title="Das Besondere am Pustekuchen ist die Elterninitiative"
+tagline="Die vier Kernpunkte der Elterninitative"
+items={[
+  {
+    title: 'Punkt 1',
+    description:
+      "Unser Kindergarten ist eine von Eltern selbst organisierte Kindertageseinrichtung in gemeinnütziger Trägerschaft. Wir können flexibel und initiativ auf veränderte gesellschaftliche Verhältnisse reagieren.",
+    icon: 'tabler:package',
+  },
+  {
+    title: 'Punkt 2',
+    description:
+      "Durch den vertrauensvollen Austausch zwischen Eltern und Team entsteht bei den Kindern ein Gefühl der Geborgenheit und Sicherheit. Als Eltern kann man sich untereinander austauschen, sich gegenseitig helfen und gemeinsam Feste feiern!",
+    icon: 'tabler:letter-case',
+  },
+  {
+    title: 'Punkt 3',
+    description:
+      'Eltern bekommen einen klaren Einblick in das Kita-Leben und bringen sich im Rahmen ihrer zeitlichen Möglichkeiten, Interessen und Fertigkeiten ein.',
+    icon: 'tabler:paint',
+  },
+  {
+    title: 'Punkt 4',
+    description:
+      'Als eingetragener gemeinnütziger Verein erheben wir pro Kind/pro Familie einen monatlichen Beitrag von 26Euro. Die Mitglieder der Elterninitiative haben festgelegt, dass Eltern pro Jahre an 4 Aktionssamstagen teilnehmen, um die Einrichtung bei allen anfallenden Arbeiten (Gartenarbeiten, kleinere Renovierungsarbeiten etc.) zu unterstützen.',
+    icon: 'tabler:paint',
+  },
+  {
+    title: 'Ready!',
+    icon: 'tabler:check',
+  },
+]}
+image={{
+  src: '~/assets/images/bauklotz.jpg',
+  alt: 'Steps image',
+}}
+/>
 
 
   <!-- Features Widget *************** -->
@@ -81,6 +122,90 @@ const metadata = {
       },
     ]}
   />
+
+  <Content2
+  isReversed
+  title="Bewegung und Literatur als Grundsäule"
+  subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  items={[
+    {
+      title: 'Mit spannenden Geschichten die Welt entdecken',
+      description:
+        'Als Literaturkindergarten präsentieren wir den Kindern ein vielfältiges Sortiment an Büchern, darunter Bilderbücher, Vorlesebücher, Sach- und Wissensbücher und vieles mehr.',
+    },
+    {
+      title: '',
+      description:
+        'Unser Ziel ist es, gemeinsam mit den Kindern in fesselnde Geschichten einzutauchen und diese als Schlüssel zur Entdeckung der Welt zu nutzen.',
+    },
+
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1616093266211-d98e19d1f5bc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: 'Colorful Image',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Literaturkindergarten</h3>
+    
+  </Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content2>
+
+<Content2
+isAfterContent
+items={[
+  {
+    title: 'Wie Bewegung und Umweltsensibilisierung den Kindergartenalltag bereichern',
+    description: `Bewegungskindergärten sind spezielle Tageseinrichtungen für Kinder, die sich darauf konzentrieren, Bewegung, Psychomotorik und Umweltsensibilisierung gezielt in den täglichen Kindergartenablauf zu integrieren.`,
+  },
+]}
+image={{
+  src: 'https://images.unsplash.com/photo-1597179300169-dce9b5b530f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGtpbmRlciUyMHNwb3J0fGVufDB8fDB8fHwy',
+  alt: 'Blueprint Image',
+}}
+>
+<Fragment slot="content">
+<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Bewegungskindergarten</h3>
+</Fragment>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content2>
+
+<Content2
+isReversed
+items={[
+  {
+    title: 'Auszeichnung für Kitas mit besonderem Engagement in der Leseförderung',
+    description:
+      'Das Gütesiegel Buchkita zeichnet Kindertagesstätten aus, die sich aktiv in der Leseförderung und der Lese- sowie Sprachentwicklung von Kindern engagieren.',
+  },
+  {
+    title: '',
+    description:
+      'In diesen Kitas nehmen die frühkindlichen Erfahrungen mit Büchern, Erzählungen, Reimen und Schriftkultur einen zentralen Platz im pädagogischen Konzept ein.',
+  },
+
+]}
+image={{
+  src: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Buchkindergarten</h3>
+  
+</Fragment>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content2>
 
   <!-- Content Widget **************** -->
 
@@ -124,50 +249,6 @@ const metadata = {
  
 
   <!-- Content Widget **************** -->
-
-
-
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    id="elternini"
-    title="Das Besondere am Pustekuchen ist die Elterninitiative"
-    tagline="Die vier Kernpunkte der Elterninitative"
-    items={[
-      {
-        title: 'Punkt 1',
-        description:
-          "Unser Kindergarten ist eine von Eltern selbst organisierte Kindertageseinrichtung in gemeinnütziger Trägerschaft. Wir können flexibel und initiativ auf veränderte gesellschaftliche Verhältnisse reagieren.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Punkt 2',
-        description:
-          "Durch den vertrauensvollen Austausch zwischen Eltern und Team entsteht bei den Kindern ein Gefühl der Geborgenheit und Sicherheit. Als Eltern kann man sich untereinander austauschen, sich gegenseitig helfen und gemeinsam Feste feiern!",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Punkt 3',
-        description:
-          'Eltern bekommen einen klaren Einblick in das Kita-Leben und bringen sich im Rahmen ihrer zeitlichen Möglichkeiten, Interessen und Fertigkeiten ein.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Punkt 4',
-        description:
-          'Als eingetragener gemeinnütziger Verein erheben wir pro Kind/pro Familie einen monatlichen Beitrag von 26Euro. Die Mitglieder der Elterninitiative haben festgelegt, dass Eltern pro Jahre an 4 Aktionssamstagen teilnehmen, um die Einrichtung bei allen anfallenden Arbeiten (Gartenarbeiten, kleinere Renovierungsarbeiten etc.) zu unterstützen.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/bauklotz.jpg',
-      alt: 'Steps image',
-    }}
-  />
 
   <!-- Features2 Widget ************** -->
 

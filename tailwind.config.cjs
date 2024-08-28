@@ -1,4 +1,4 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
+dimport defaultTheme from 'tailwindcss/defaultTheme';
 import typographyPlugin from '@tailwindcss/typography';
 
 module.exports = {
