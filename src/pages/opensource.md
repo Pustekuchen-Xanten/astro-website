@@ -21,7 +21,7 @@ Unsere Website wurde mit einer modernen Technik namens Astro entwickelt. Dieses 
 
 ### Offen für alle: Unser Engagement in der Open-Source-Community
 
-Astro ist ein sogenanntes Open-Source-Projekt. Das bedeutet, dass der Quellcode für alle zugänglich ist und von Entwicklern weltweit verbessert werden kann. Auch unsere Website ist komplett Open Source. Wenn Sie möchten, können Sie den Code auf GitHub ansehen und vielleicht sogar selbst etwas dazu beitragen. Hier finden Sie den [Link zum Repository](https://github.com/DeinGithubLink).
+Astro ist ein sogenanntes Open-Source-Projekt. Das bedeutet, dass der Quellcode für alle zugänglich ist und von Entwicklern weltweit verbessert werden kann. Auch unsere Website ist komplett Open Source. Wenn Sie möchten, können Sie den Code auf GitHub ansehen und vielleicht sogar selbst etwas dazu beitragen. Hier finden Sie den [Link zum Repository](https://github.com/Pustekuchen-Xanten/astro-website).
 
 ### Ein modernes Design mit Astro Wind
 
