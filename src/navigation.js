@@ -11,19 +11,19 @@ export const headerData = {
       links: [
         {
           text: 'Das sind wir',
-          href: getPermalink('/#about'),
-        },
-        {
-          text: 'unser Team',
-          href: getPermalink('/team'),
+          href: getPermalink('/#wir'),
         },
         {
           text: 'Elterninitiative',
           href: getPermalink('/#elternini'),
         },
         {
+          text: 'unser Team',
+          href: getPermalink('/team'),
+        },
+        {
           text: 'ABC',
-          href: getPermalink('/#abc'),
+          href: getPermalink('/abc'),
         },
         {
           text: 'Kurz und Bündig',
@@ -36,16 +36,15 @@ export const headerData = {
       ],
     },
     {
-      text: 'Speiseplan',
-      href: getPermalink('/#speiseplan'),
-    },
-
-    {
       text: 'Aktuelles',
       links: [
         {
           text: 'Blog',
           href: getBlogPermalink(),
+        },
+        {
+          text: 'Speiseplan',
+          href: getPermalink('/#speiseplan'),
         },
       ],
     },
