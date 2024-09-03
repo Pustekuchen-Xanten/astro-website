@@ -13,42 +13,43 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Pustekuchen Xanten — Unser Team',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
 
+  <!-- Sandra **************** -->
   <Content
     isReversed
     tagline="Unser Team"
     title="Das sind unsere MitarbeiterInnen"
     items={[
       {
-        title: 'Annekdote 1',
+        title: 'Wenn du ein Superheld wärst, was wäre deine Superkraft und wie würdest du sie in der Kita einsetzen?',
         description:
-          'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+          'Ich wäre die Schlaf-Flüsterin! Mit einem Fingerschnippen könnte ich jedes müde Kind sofort in den Tiefschlaf versetzen – und zwar genau dann, wenn ich es brauche.',
       },
       {
-        title: 'Annekdote 2',
+        title: 'Wenn du für einen Tag ein Kinderspielzeug sein könntest, welches wärst du und warum?',
         description:
-          'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+          'Ich wäre definitiv der hüpfende Gummiball! Warum? Na, weil ich dann endlich überall gleichzeitig sein könnte!',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Stell dir vor, du könntest jeden Tag einen neuen, verrückten Hut tragen, der deine Persönlichkeit beschreibt. Wie würde dein heutiger Hut aussehen?',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Mein heutiger Hut wäre eine Mischung aus einem riesigen Donut und einem Zirkuszelt, mit Glitzer und Lichtern, die wild blinken.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1667375947428-935b0c6354d7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      alt: 'Colorful Image',
+      src: '~/assets/images/sandra.jpg',
+      alt: 'Sandra Schmitthüsen',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Maxi Musterfrau</h3>
-      Leitung
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sandra Schmitthüsen</h3>
+      Pädagogoische Leitung
     </Fragment>
 
     <Fragment slot="bg">
@@ -56,45 +57,143 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
+  <!-- Ivonne **************** -->
 
   <Content
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Wenn du ein Superheld wärst, was wäre deine Superkraft und wie würdest du sie in der Kita einsetzen?',
+        description:
+          'Ich wäre die Schlaf-Flüsterin! Mit einem Fingerschnippen könnte ich jedes müde Kind sofort in den Tiefschlaf versetzen – und zwar genau dann, wenn ich es brauche.',
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Wenn du für einen Tag ein Kinderspielzeug sein könntest, welches wärst du und warum?',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Ich wäre definitiv der hüpfende Gummiball! Warum? Na, weil ich dann endlich überall gleichzeitig sein könnte!',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Stell dir vor, du könntest jeden Tag einen neuen, verrückten Hut tragen, der deine Persönlichkeit beschreibt. Wie würde dein heutiger Hut aussehen?',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Bla Bla ',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Mein heutiger Hut wäre eine Mischung aus einem riesigen Donut und einem Zirkuszelt, mit Glitzer und Lichtern, die wild blinken.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1663820118904-c783debd25cd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      alt: 'Blueprint Image',
+      src: '~/assets/images/ivonne.jpg',
+      alt: 'Ivonne Kempkes',
     }}
   >
   <Fragment slot="content">
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Marta Megafrau</h3>
-    stellvertretende Leitung
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ivonne Kempkes</h3>
+    Erzieherin / stellv. Leitung
   </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+  <!-- Nicole **************** -->
+  <Content
+  isReversed
+  items={[
+    {
+      title: 'Wenn du ein Superheld wärst, was wäre deine Superkraft und wie würdest du sie in der Kita einsetzen?',
+      description:
+        'Ich wäre die Schlaf-Flüsterin! Mit einem Fingerschnippen könnte ich jedes müde Kind sofort in den Tiefschlaf versetzen – und zwar genau dann, wenn ich es brauche.',
+    },
+    {
+      title: 'Wenn du für einen Tag ein Kinderspielzeug sein könntest, welches wärst du und warum?',
+      description:
+        'Ich wäre definitiv der hüpfende Gummiball! Warum? Na, weil ich dann endlich überall gleichzeitig sein könnte!',
+    },
+    {
+      title: 'Stell dir vor, du könntest jeden Tag einen neuen, verrückten Hut tragen, der deine Persönlichkeit beschreibt. Wie würde dein heutiger Hut aussehen?',
+      description:
+        'Mein heutiger Hut wäre eine Mischung aus einem riesigen Donut und einem Zirkuszelt, mit Glitzer und Lichtern, die wild blinken.',
+    },
+  ]}
+  image={{
+    src: '~/assets/images/nicole.jpg',
+    alt: 'Nicole Kraska',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Nicole Kraska</h3>
+    Erzieherin / Motopädagogin
+  </Fragment>
 
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+  <!-- Lea **************** -->
+<Content
+isAfterContent
+items={[
+  {
+    title: 'Wenn du ein Superheld wärst, was wäre deine Superkraft und wie würdest du sie in der Kita einsetzen?',
+    description:
+      'Ich wäre die Schlaf-Flüsterin! Mit einem Fingerschnippen könnte ich jedes müde Kind sofort in den Tiefschlaf versetzen – und zwar genau dann, wenn ich es brauche.',
+  },
+  {
+    title: 'Wenn du für einen Tag ein Kinderspielzeug sein könntest, welches wärst du und warum?',
+    description:
+      'Ich wäre definitiv der hüpfende Gummiball! Warum? Na, weil ich dann endlich überall gleichzeitig sein könnte!',
+  },
+  {
+    title: 'Stell dir vor, du könntest jeden Tag einen neuen, verrückten Hut tragen, der deine Persönlichkeit beschreibt. Wie würde dein heutiger Hut aussehen?',
+    description:
+      'Mein heutiger Hut wäre eine Mischung aus einem riesigen Donut und einem Zirkuszelt, mit Glitzer und Lichtern, die wild blinken.',
+  },
+]}
+image={{
+  src: '~/assets/images/lea.jpg',
+  alt: 'Lea Steltner',
+}}
+>
+<Fragment slot="content">
+<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Lea Steltner</h3>
+Erzieherin
+</Fragment>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content>
+  <!-- Marina **************** -->
+<Content
+isReversed
+items={[
+  {
+    title: 'Wenn du ein Superheld wärst, was wäre deine Superkraft und wie würdest du sie in der Kita einsetzen?',
+    description:
+      'Ich wäre die Schlaf-Flüsterin! Mit einem Fingerschnippen könnte ich jedes müde Kind sofort in den Tiefschlaf versetzen – und zwar genau dann, wenn ich es brauche.',
+  },
+  {
+    title: 'Wenn du für einen Tag ein Kinderspielzeug sein könntest, welches wärst du und warum?',
+    description:
+      'Ich wäre definitiv der hüpfende Gummiball! Warum? Na, weil ich dann endlich überall gleichzeitig sein könnte!',
+  },
+  {
+    title: 'Stell dir vor, du könntest jeden Tag einen neuen, verrückten Hut tragen, der deine Persönlichkeit beschreibt. Wie würde dein heutiger Hut aussehen?',
+    description:
+      'Mein heutiger Hut wäre eine Mischung aus einem riesigen Donut und einem Zirkuszelt, mit Glitzer und Lichtern, die wild blinken.',
+  },
+]}
+image={{
+  src: '~/assets/images/marina.jpg',
+  alt: 'Marina',
+}}
+>
+<Fragment slot="content">
+  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Marina</h3>
+  Erzieherin
+</Fragment>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content>
+<!--  **************** -->
   
 </Layout>
