@@ -52,12 +52,13 @@ const metadata = {
   isReversed
   id="wir"
   title="Bewegung und Literatur als Grundsäule"
-  subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  subtitle=""
   items={[
     {
       title: 'Mit spannenden Geschichten die Welt entdecken',
       description:
         'Als Literaturkindergarten präsentieren wir den Kindern ein vielfältiges Sortiment an Büchern, darunter Bilderbücher, Vorlesebücher, Sach- und Wissensbücher und vieles mehr.',
+        
     },
     {
       title: '',
@@ -189,16 +190,19 @@ image={{
     items={[
       {
         title: 'täglich frisch',
+        icon: 'tabler:leaf',
         description:
           'In unserer Kita wird täglich frisch gekocht! Unsere Köchinnen bereiten die Mahlzeiten direkt vor Ort mit viel Liebe und Sorgfalt zu. So stellen wir sicher, dass jedes Kind gesunde, abwechslungsreiche und leckere Speisen genießt.',
       },
       {
         title: 'Kinder gestalten Speiseplan',
+        icon: 'tabler:mood-kid',
         description:
           'In unserer wöchentlichen Kinderkonferenz gestalten die Kinder aktiv den Speiseplan mit! Sie bringen ihre Ideen und Vorlieben ein und lernen spielerisch, wie eine ausgewogene Ernährung aussieht. So macht das Essen nicht nur Spaß, sondern fördert auch das Bewusstsein für gesunde Lebensmittel.',
       },
       {
         title: 'Obst und Gemüsesnacks',
+        icon: 'tabler:apple',
         description:
           'Zwischen Frühstück und Mittagessen bieten wir den Kindern gesunde Snacks an. Frisches Obst, knackiges Gemüse und kleine Leckereien sorgen für Energie und gute Laune. So bleiben die Kleinen fit und gestärkt durch den Tag!',
       },
@@ -224,7 +228,7 @@ image={{
 
 
 
-  <!-- FAQs Widget ******************* -->
+  <!-- kurz und bündig Widget ******************* -->
 
   <FAQs
     id="konzept"
@@ -239,10 +243,18 @@ image={{
           "Der pädagogische Ansatz ist der rote Faden, der sich durch die Kindergartenarbeit zieht und Ausgangspunkt aller Entscheidungen, die getroffen werden. In der Pädagogik findet man eine Reihe nebeneinander stehender Ansätze. Im „PUSTEKUCHEN“ haben wir uns für den Begriff “ Situationsorientierte Pädagogik“ entschieden, da dieser Überbegriff für verschiedene subjektive und lebensweltorientierte pädagogische Ansätze steht.",
       },
       {
-        title: 'Unser Tagesablauf',
-        description:
-          'Der Kindergarten-Pustekuchen bietet mit seiner täglichen Öffnungszeit von 7:30 -16:45 Uhr sowohl die Betreuung am Vormittag, als auch über Mittag mit anschließendem Nachmittagsprogramm an. Alle Kinder sollten bis um 9:00 Uhr gebracht sein, danach beginnt der offizielle Tag im Kindergarten.',
-      },
+  title: 'Unser Tagesablauf',
+  description: `
+    <ul class="list-disc pl-5">
+      <li>Der Kindergarten Pustekuchen hat täglich von <strong>7:30 bis 16:45 Uhr</strong> geöffnet.</li>
+      <li>Betreuung am Vormittag und über Mittag mit anschließendem Nachmittagsprogramm.</li>
+      <li>Alle Kinder sollten <strong>bis 9:00 Uhr</strong> gebracht werden.</li>
+      <li>Danach beginnt der offizielle Tag im Kindergarten.</li>
+    </ul>
+  `,
+},
+
+
       {
         title: 'Elterninitiative –„Wir machen mit!“',
         description:
@@ -273,8 +285,8 @@ image={{
   tagline="Sie haben weitere Fragen, melden Sie sich gerne bei uns."
   items={[
     {
-      title: 'Generale Fragen',
-      description: `Ihr könnt uns gerne anrufen, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.`,
+      title: 'Anrufen',
+      description: `Ihr könnt uns gerne anrufen, wenn ihr Fragen habt oder eine Beratung wünscht. Wir sind während unserer Öffnungszeiten telefonisch erreichbar und freuen uns, euch weiterzuhelfen.`,
     },
     {
       title: 'Telefon',
@@ -283,9 +295,9 @@ image={{
       color: 'text-rose-400'
     },
     {
-      title: 'Anfragen',
+      title: 'Mail',
       description:
-        'Generelle Fragen könnt ihr uns auch gerne mailen. Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+        'Generelle Fragen und Anfragen könnt ihr uns auch gerne per E-Mail senden. Wir bemühen uns, eure Anfragen schnellstmöglich zu beantworten und stehen für alle Anliegen zur Verfügung.',
     },
     {
       title: 'Email',
@@ -296,7 +308,7 @@ image={{
     {
       title: 'vor Ort',
       description:
-        'Bei persönlichen Fragen, sprecht uns doch einfach vor Ort an. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+        'Bei persönlichen Fragen oder Anliegen, sprecht uns doch einfach direkt vor Ort an. Wir sind immer gerne für euch da und nehmen uns Zeit, um eure Anliegen in einem persönlichen Gespräch zu klären.',
     },
     {
       title: 'Anschrift',

@@ -60,12 +60,11 @@ export const footerData = {
     { text: 'Open Source', href: getPermalink('/opensource') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/Pustekuchen-Xanten/astro-website' },
   ],
   footNote: `
-    © 2024 Pustekuchen. Theme by <a class="underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · Licensed under the MIT License. Source Code available on <a class="text-black underline dark:text-muted" href="https://github.com/Pustekuchen-Xanten/astro-website">GitHub</a>.
+    © 2024 Pustekuchen. Theme by <a class="underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> ·  lizenziert unter der MIT-Lizenz. Quellcode verfügbar auf <a class="text-black underline dark:text-muted" href="https://github.com/Pustekuchen-Xanten/astro-website">GitHub</a>.
   `,
 };
