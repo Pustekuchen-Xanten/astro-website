@@ -5,7 +5,9 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 ## Technik, die begeistert: Über das Astro Framework
 
-Unsere Website wurde mit einer modernen Technik namens Astro entwickelt. Dieses System sorgt dafür, dass die Seiten, die Sie sehen, besonders schnell und effizient sind. Wie funktioniert das? Astro erstellt sogenannte statische Websites. Das bedeutet, dass die Seiten bereits fertig sind, bevor sie auf Ihren Bildschirm geladen werden. Dadurch braucht die Website weniger Ressourcen und lädt schneller.
+Die Website des **Pustekuchen** Kindergartens wurde mit dem modernen Astro Framework entwickelt – einer Technologie, die für schnelle und effiziente Webseiten sorgt. Astro setzt auf das Prinzip der statischen Websites. Das bedeutet, dass die Seiten bereits vollständig vorab erstellt werden und beim Aufruf direkt bereitstehen.
+
+Durch diese Vorgehensweise lädt die Website deutlich schneller und benötigt weniger Ressourcen, was zu einem angenehmen und reibungslosen Nutzererlebnis führt. Eltern können so die Informationen rund um den Kindergarten jederzeit schnell und zuverlässig abrufen. Astro sorgt dabei für eine zukunftssichere und performante Weblösung.
 
 ![image](https://pustekuchen-xanten.de/images/code.png)
 
@@ -25,9 +27,10 @@ Astro ist ein sogenanntes Open-Source-Projekt. Das bedeutet, dass der Quellcode 
 
 ### Ein modernes Design mit Astro Wind
 
-Für das Aussehen unserer Website haben wir das [Astro Wind Theme](https://onwidget.com/) verwendet. Dieses Design ist perfekt auf Astro-Websites abgestimmt und ermöglicht es uns, schnell und einfach eine ansprechende Website zu gestalten.
+Das Grundgerüst unserer Website basiert auf dem [Astro Wind Theme](https://onwidget.com/), das speziell für Astro-Websites entwickelt wurde. Dieses Theme bietet eine hervorragende Grundlage für eine ansprechende und leistungsfähige Website.
 
-Mit diesen modernen Techniken sorgen wir dafür, dass unsere Website nicht nur schön aussieht, sondern auch schnell, sicher und transparent ist – damit Ihr Besuch bei uns so angenehm wie möglich ist.
+Durch umfassende Anpassungen haben wir das Design genau auf unsere Bedürfnisse und Ansprüche zugeschnitten. So vereint die Website modernes Aussehen mit hoher Geschwindigkeit, Sicherheit und Transparenz, um Ihren Besuch so angenehm wie möglich zu gestalten
+
 
 ### Technische Realisierung
 
@@ -36,3 +39,5 @@ Mit diesen modernen Techniken sorgen wir dafür, dass unsere Website nicht nur s
 Kontakt:
 
 [tobias@steltner.cloud](mailto:tobias@steltner.cloud)
+
+[tobias.steltner.cloud](https://tobias.steltner.cloud)

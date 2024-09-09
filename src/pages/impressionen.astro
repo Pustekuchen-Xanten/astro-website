@@ -1,15 +1,39 @@
 ---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+
+const metadata = {
+  title: 'Services',
+};
 import Gallery from '~/components/common/Gallery.astro';
 
 const galleryImages = [
-  { src: '~/assets/images/photo1.jpg', alt: 'Beautiful Landscape' },
-  { src: '~/assets/images/photo2.jpg', alt: 'City View' },
-  { src: '~/assets/images/photo3.jpg', alt: 'Mountain Peaks' },
-  { src: '~/assets/images/photo4.jpg', alt: 'Sunset Over the Ocean' },
+  { src: '~/assets/images/photo1.jpg', alt: 'Beautiful Landscape', orientation: 'portrait' },
+  { src: '~/assets/images/photo2.jpg', alt: 'City View', orientation: 'portrait' },
+  { src: '~/assets/images/photo4.jpg', alt: 'Sunset Over the Ocean', orientation: 'landscape' },
+  { src: '~/assets/images/photo2.jpg', alt: 'City View', orientation: 'portrait' },
+  { src: '~/assets/images/photo4.jpg', alt: 'Sunset Over the Ocean', orientation: 'landscape' },
+  { src: '~/assets/images/photo2.jpg', alt: 'City View', orientation: 'portrait' },
+  { src: '~/assets/images/photo4.jpg', alt: 'Sunset Over the Ocean', orientation: 'landscape' },
+  { src: '~/assets/images/photo2.jpg', alt: 'City View', orientation: 'portrait' },
+  { src: '~/assets/images/photo2.jpg', alt: 'City View', orientation: 'portrait' },
+  { src: '~/assets/images/photo2.jpg', alt: 'City View', orientation: 'portrait' },
+  { src: '~/assets/images/photo4.jpg', alt: 'Sunset Over the Ocean', orientation: 'landscape' },
+  { src: '~/assets/images/photo2.jpg', alt: 'City View', orientation: 'portrait' },
+
 ];
 ---
 
-<section class="py-12">
-  <h2 class="text-3xl font-bold text-center mb-8">Photo Gallery</h2>
-  <Gallery images={galleryImages} />
-</section>
+<Layout metadata={metadata}>
+    <Gallery images={galleryImages} 
+    tagline="Bilder sagen mehr als Worte"
+    title="Impressionen aus dem Pustekuchen"
+    />
+  </section>
+  
+</Layout>

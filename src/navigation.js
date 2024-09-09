@@ -44,7 +44,7 @@ export const headerData = {
         },
         {
           text: 'Impressionen',
-          href: getPermalink('/gallerie'),
+          href: getPermalink('/impressionen'),
         },
       ],
     },
@@ -69,6 +69,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/Pustekuchen-Xanten/astro-website' },
   ],
   footNote: `
-    © 2024 Pustekuchen. Theme by <a class="underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> ·  lizenziert unter der MIT-Lizenz. Quellcode verfügbar auf <a class="text-black underline dark:text-muted" href="https://github.com/Pustekuchen-Xanten/astro-website">GitHub</a>.
+    © 2024 Pustekuchen. Lizenziert unter der MIT-Lizenz. Quellcode verfügbar auf <a class="text-black underline dark:text-muted" href="https://github.com/Pustekuchen-Xanten/astro-website">GitHub</a>.
   `,
 };
