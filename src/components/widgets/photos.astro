@@ -1,0 +1,33 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Photo Gallery',
+};
+
+const { photos = [] } = Astro.props;
+---
+
+<Layout metadata={metadata}>
+  <main class="max-w-6xl mx-auto py-8 px-4">
+    <h1 class="text-4xl font-bold mb-8 text-center">Photo Gallery</h1>
+    <div 
+      class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      style="grid-auto-rows: 10px; grid-auto-flow: dense;"
+    >
+      {photos.map(photo => (
+        <div
+          class="relative overflow-hidden rounded-lg bg-gray-100"
+          style={`grid-row: span ${photo.mode === 'portrait' ? Math.ceil((photo.height / photo.width) * 10) : Math.ceil((photo.width / photo.height) * 10)};`}
+        >
+          <img
+            src={photo.src}
+            alt={photo.alt || 'Photo'}
+            class="object-contain w-full h-full transition-transform duration-300 hover:scale-105"
+            style={`aspect-ratio: ${photo.mode === 'portrait' ? '3 / 4' : '4 / 3'};`}
+          />
+        </div>
+      ))}
+    </div>
+  </main>
+</Layout>

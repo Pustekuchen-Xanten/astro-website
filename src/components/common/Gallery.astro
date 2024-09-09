@@ -1,0 +1,31 @@
+---
+// Gallery.astro
+import Image from '~/components/common/Image.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+type GalleryProps = {
+  images: Array<{ src: string, alt: string, orientation: 'portrait' | 'landscape' }>;
+};
+
+const { images } = Astro.props;
+---
+
+<div class="px-4 sm:px-6 lg:px-8 py-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-auto">
+    {images.map((image) => (
+      <div
+        class={`relative overflow-hidden rounded-lg group ${
+          image.orientation === 'landscape' ? 'col-span-1 sm:col-span-2 lg:col-span-2' : ''
+        } flex items-center justify-center`}
+      >
+        <Image
+          src={image.src}
+          alt={image.alt}
+          class={`object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg ${
+            image.orientation === 'portrait' ? 'h-full w-auto' : 'w-full h-auto'
+          }`}
+        />
+      </div>
+    ))}
+  </div>
+</div>

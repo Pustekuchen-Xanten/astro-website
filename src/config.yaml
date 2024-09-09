@@ -4,21 +4,21 @@ site:
   base: '/dist'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: null
 
 # Default SEO metadata
 metadata:
   title:
     default: Pustekuchen
     template: '%s — Pustekuchen'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Pustekuchen-Xanten.de - Elterninitiativkindergarten in Xanten - Bewegungskindergarten - Literaturkindergarten - Buchkita"
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Pustekuchen-Xanten.de
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/puku-bk.webp'
         width: 1200
         height: 628
     type: website
