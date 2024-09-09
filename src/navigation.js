@@ -18,20 +18,16 @@ export const headerData = {
           href: getPermalink('/#elternini'),
         },
         {
-          text: 'unser Team',
+          text: 'Unser Team',
           href: getPermalink('/team'),
         },
         {
-          text: 'ABC',
+          text: 'Das ABC',
           href: getPermalink('/abc'),
         },
         {
-          text: 'Kurz und Bündig',
-          href: getPermalink('/#konzept'),
-        },
-        {
-          text: 'Kontakt',
-          href: getPermalink('/#kontakt'),
+          text: 'Auf einen Blick',
+          href: getPermalink('/#blick'),
         },
       ],
     },
@@ -39,14 +35,22 @@ export const headerData = {
       text: 'Aktuelles',
       links: [
         {
-          text: 'Blog',
+          text: 'Neuigkeiten ',
           href: getBlogPermalink(),
         },
         {
           text: 'Speiseplan',
           href: getPermalink('/#speiseplan'),
         },
+        {
+          text: 'Impressionen',
+          href: getPermalink('/gallerie'),
+        },
       ],
+    },
+    {
+      text: 'Kontakt',
+      href: getPermalink('/#kontakt'),
     },
   ],
 };

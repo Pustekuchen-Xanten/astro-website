@@ -1,31 +1,54 @@
 ---
 // Gallery.astro
 import Image from '~/components/common/Image.astro';
+import Headline from '~/components/ui/Headline.astro'; // Import the Headline component
 import Layout from '~/layouts/PageLayout.astro';
 
 type GalleryProps = {
   images: Array<{ src: string, alt: string, orientation: 'portrait' | 'landscape' }>;
 };
 
-const { images } = Astro.props;
+const { images, 
+        title = await Astro.slots.render('title'), 
+        subtitle = await Astro.slots.render('subtitle'), 
+        tagline 
+      } = Astro.props;
 ---
 
-<div class="px-4 sm:px-6 lg:px-8 py-8">
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-auto">
-    {images.map((image) => (
-      <div
-        class={`relative overflow-hidden rounded-lg group ${
-          image.orientation === 'landscape' ? 'col-span-1 sm:col-span-2 lg:col-span-2' : ''
-        } flex items-center justify-center`}
-      >
-        <Image
-          src={image.src}
-          alt={image.alt}
-          class={`object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg ${
-            image.orientation === 'portrait' ? 'h-full w-auto' : 'w-full h-auto'
-          }`}
-        />
+<section class="relative not-prose">
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+
+    <!-- Title Section using Headline component -->
+    <Headline
+      title={title}
+      subtitle={subtitle}
+      tagline={tagline}
+      classes={{
+        container: 'max-w-xl sm:mx-auto lg:max-w-2xl text-center pb-10 md:pb-16',
+        title: 'text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200',
+        subtitle: 'text-xl text-muted dark:text-slate-300',
+      }}
+    />
+
+    <!-- Gallery Section -->
+    <div class="px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-auto">
+        {images.map((image) => (
+          <div
+            class={`relative overflow-hidden rounded-lg group ${
+              image.orientation === 'landscape' ? 'col-span-1 sm:col-span-2 lg:col-span-2' : ''
+            } flex items-center justify-center`}
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              class={`object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg ${
+                image.orientation === 'portrait' ? 'h-full w-auto' : 'w-full h-auto'
+              }`}
+            />
+          </div>
+        ))}
       </div>
-    ))}
+    </div>
   </div>
-</div>
+</section>
