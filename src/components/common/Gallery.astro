@@ -15,7 +15,7 @@ const { images,
       } = Astro.props;
 ---
 
-<section class="relative not-prose">
+<section class="relative md:-mt-[-50px] not-prose">
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
 
     <!-- Title Section using Headline component -->
@@ -31,7 +31,7 @@ const { images,
     />
 
     <!-- Gallery Section -->
-    <div class="px-4 sm:px-6 lg:px-8 py-8">
+    <div class="md:-mt-[80px] px-4 sm:px-6 lg:px-8 py-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-auto">
         {images.map((image) => (
           <div
