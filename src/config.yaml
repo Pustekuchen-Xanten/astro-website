@@ -1,7 +1,7 @@
 site:
   name: Pustekuchen
-  site: 'https://pustekuchen-xanten.de'
-  base: '/dist'
+  site: 'https://puku.coolify.sohn.uk'
+  base: '/'
   trailingSlash: false
 
   googleSiteVerificationId: null
