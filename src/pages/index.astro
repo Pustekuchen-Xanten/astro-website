@@ -24,27 +24,33 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Erfahre mehr',
-        href: '#wir',
-        icon: 'tabler:circle-check',
-      },
-      
-      
-    ]}
-    image={{ src: '~/assets/images/ansicht-aussen.webp', alt: 'Pustekuchen Gebäude' }}
-  >
-    <Fragment slot="title">
-      <span class="text-blue-600">Herzlich</span> <span class="text-red-600"> Willkommen</span> <span class="text-yellow-400"> im</span> <span class="text-green-600"> Pustekuchen</span>
-    </Fragment>
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Erfahre mehr',
+      href: '#wir',
+      target: '_blank',
+      icon: 'tabler:hand-click',
+    },
+  ]}
+  image={{ src: 'https://pustekuchen-xanten.de/dist/_astro/ansicht-aussen.DRudngXD_U8PXt.webp', alt: 'AstroWind Hero Image' }}
+>
+  <!-- Title Slot -->
+  <Fragment slot="title">
+    <span class= "text-slate-800 dark:text-zinc-800">Herzlich Willkommen im</span>
+    <span class="text-purple-500 dark:text-accent highlight"> Pustekuchen</span><span class="text-red-500 dark:text-green-500 highlight"> Kindergarten</span> <span class= "text-slate-800 dark:text-zinc-800">in</span> <span class="text-blue-700 dark:text-fuchsia-700 highlight">Xanten.</span>
+  </Fragment>
+  <Fragment slot="subtitle">
+      <span class="font-bold font-poppins text-blue-900">Der Elterninitativkindergarten in Xanten.</span>
+      <br> <span class="text-accent dark:text-white highlight"></span> <span class="font-semibold font-poppins text-neutral-900">Durch eine klare Kommunikation auf Augenhöhe und gezieltes Mitwirken der Kinder, werden sie in ihrer Entwicklung begleitet und unterstützt.</span></span></br>
 
-    <Fragment slot="subtitle">
-        <span class="font-black font-poppins text-black  dark:text-white">dem Elterninitiativkindergarten in Xanten<p> <span class="text-accent dark:text-white highlight"></span> <span class="font-bold font-poppins text-black dark:text-white"><br>Wir sind ausgezeichneter <span class="text-blue-600 text-xl">Bewegungs-</span> und <span class="text-red-600 text-xl">Literaturkindergarten</span> und dürfen den Titel <span class="text-yellow-400 text-xl">Buchkita</span> tragen.</br></br> Unser vielseitig – kreatives pädagogisches Konzept lässt uns ihr Kind mit all seinen Bedürfnissen und Wünschen sehen. <br><br>Durch eine klare Kommunikation auf Augenhöhe und gezieltes Mitwirken der Kinder, werden sie in ihrer Entwicklung begleitet und unterstützt.</br></br></span> </span></p> </span>
-        <span><br></br></span>
-    </Fragment>
-  </Hero>
+
+  </Fragment>
+</Hero>
+
+
+
+
 
   <!-- Das sind wir Widget *************** -->
 
