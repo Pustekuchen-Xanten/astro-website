@@ -14,7 +14,8 @@ const {
   callToAction,
   items = [],
   columns,
-  image = await Astro.slots.render('image'),
+  image = await Astro.slots.render('image'), // Main image (after content)
+  headerImage = Astro.props.headerImage, // New image after title
   isReversed = false,
   isAfterContent = false,
 
@@ -31,6 +32,7 @@ const {
   containerClass={`max-w-7xl mx-auto ${isAfterContent ? 'pt-0 md:pt-0 lg:pt-0' : ''} ${classes?.container ?? ''}`}
   bg={bg}
 >
+  <!-- Headline with Tagline -->
   <Headline
     title={title}
     subtitle={subtitle}
@@ -41,18 +43,41 @@ const {
       subtitle: 'max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400',
     }}
   />
+
+  <!-- New Image After Headline -->
+  {headerImage && (
+    <div class="relative mx-auto max-w-4xl my-6">
+      {typeof headerImage === 'string' ? (
+        <Image
+          src={headerImage}
+          alt={title || 'Header Image'}
+          class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+          width={640}
+          height={426}
+          layout="intrinsic"
+        />
+      ) : (
+        <Image
+          {...headerImage}
+          class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+          width={500}
+          height={700}
+          layout="intrinsic"
+        />
+      )}
+    </div>
+  )}
+
   <div class="mx-auto max-w-7xl p-4 md:px-8">
     <div class={`md:flex ${isReversed ? 'md:flex-row-reverse' : ''} md:gap-16`}>
       <div class="md:basis-1/2 self-center">
         {content && <div class="mb-12 text-lg dark:text-slate-400" set:html={content} />}
 
-        {
-          callToAction && (
-            <div class="mt-[-40px] mb-8 text-primary">
-              <Button variant="link" {...callToAction} />
-            </div>
-          )
-        }
+        {callToAction && (
+          <div class="mt-[-40px] mb-8 text-primary">
+            <Button variant="link" {...callToAction} />
+          </div>
+        )}
 
         <ItemGrid
           items={items}
@@ -69,25 +94,23 @@ const {
         />
       </div>
       <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
-        {
-          image && (
-            <div class="relative m-auto max-w-4xl">
-              {typeof image === 'string' ? (
-                <Fragment set:html={image} />
-              ) : (
-                <Image
-                  class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
-                  width={500}
-                  height={700}
-                  widths={[400, 768]}
-                  sizes="(max-width: 768px) 100vw, 432px"
-                  layout="responsive"
-                  {...image}
-                />
-              )}
-            </div>
-          )
-        }
+        {image && (
+          <div class="relative m-auto max-w-4xl">
+            {typeof image === 'string' ? (
+              <Fragment set:html={image} />
+            ) : (
+              <Image
+                class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+                width={500}
+                height={700}
+                widths={[400, 768]}
+                sizes="(max-width: 768px) 100vw, 432px"
+                layout="responsive"
+                {...image}
+              />
+            )}
+          </div>
+        )}
       </div>
     </div>
   </div>

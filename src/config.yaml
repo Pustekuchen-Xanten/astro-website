@@ -1,6 +1,6 @@
 site:
   name: Pustekuchen
-  site: 'https://puku.coolify.sohn.uk'
+  site: 'https://pustekuchen-xanten.de'
   base: '/'
   trailingSlash: false
 
@@ -28,7 +28,7 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: de
   textDirection: ltr
 
 apps:
