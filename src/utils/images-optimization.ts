@@ -1,4 +1,4 @@
-import { getImage } from 'aytro:assets';
+import { getImage } from 'astro:assets';
 import { transformUrl, parseUrl } from 'unpic';
 
 import type { ImageMetadata } from 'astro';
