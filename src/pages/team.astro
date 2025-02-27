@@ -195,16 +195,77 @@ image={{
   <Fragment slot="bg">
     <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
   </Fragment>
+  
+  </Content>
+
+    <!-- Marlies **************** -->
+<Content
+isReversed
+items={[
+  {
+    title: 'kommt noch',
+    icon: 'tabler:bike',
+    },
+  {
+    title: 'fehtl noch',
+    icon: 'tabler:book',
+  },
+
+]}
+image={{
+  src: '~/assets/images/marina.jpg',
+  alt: 'Marlies',
+}}
+>
+
+<Fragment slot="content">
+  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Marlies</h3>
+  Köchin
+</Fragment>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content>
+
+  <!-- Anja **************** -->
+  <Content
+  isAfterContent
+  items={[
+    {
+      title: 'kommt noch',
+      icon: 'tabler:leaf',
+      },
+    {
+      title: 'kommt noch',
+      icon: 'tabler:edit',
+    },
+  
+  ]}
+  image={{
+    src: '~/assets/images/lea.jpg',
+    alt: 'Anja',
+  }}
+  >
+  <Fragment slot="content">
+  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Anja</h3>
+  Köchin
+  </Fragment>
+  
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+  
   </Content>
 
   <CallToAction
   title="Unser Vorstand"
-  subtitle="Marie, Andreas, Rebecca, Melanie"
+  subtitle="Marie Boell, Andreas Tiggelbeck, Rebecca El-Zein und Melanie Markwart"
   image="~/assets/images/forteam.jpg"
 />
 <CallToAction
 title="Der Elternbeirat"
-subtitle="Marie, Andreas, Rebecca, Melanie"
+subtitle="Ramona Gräfe, Miriam Beuels, Amelie Sandmann und Sascha Ivan"
 image="~/assets/images/forteam.jpg"
 />
 

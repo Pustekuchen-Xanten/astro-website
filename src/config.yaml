@@ -1,7 +1,7 @@
 site:
   name: Pustekuchen
   site: 'https://pustekuchen-xanten.de'
-  base: '/'
+  base: '/dist'
   trailingSlash: false
 
   googleSiteVerificationId: null

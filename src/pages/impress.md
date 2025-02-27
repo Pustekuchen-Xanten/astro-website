@@ -8,7 +8,7 @@ Fildersteg 9a
 46509 Xanten
 
 **Vertreten durch:**  
-Katalin Wagner
+Marie Boell
 
 ## Kontakt
 
@@ -17,10 +17,10 @@ E-Mail: [info@pustekuchen-xanten.de](mailto:info@pustekuchen-xanten.de)
 
 ## Redaktionell verantwortlich
 
-Tobias Steltner
+Elterninitiativ-Kindergarten Xanten e.V. "Pustekuchen"  
 
 ## Verbraucherstreitbeilegung / Universalschlichtungsstelle
 
 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
-_letzes update_: August 24, 2024
+_letzes update_: Februar 27, 2025

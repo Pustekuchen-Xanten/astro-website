@@ -62,12 +62,13 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kom
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
 Elterninitiativ-Kindergarten Xanten e.V. "Pustekuchen"  
-Vorstandsvorsitzende: Katalin Wagner  
+Vorstandsvorsitzende: Marie Boell
+
 Fildersteg 9a  
 46509 Xanten
 
 Telefon: 028015500  
-E-Mail: [info@pustekuchen-xanten.de](mailto:info@pustekuchen-xanten.de)
+E-Mail: [info (at) pustekuchen-xanten.de](mailto:info@pustekuchen-xanten.de)
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 
@@ -91,4 +92,4 @@ Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligun
 
 WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜN
 
-_Letztes updated_: August 24, 2024
+_Letztes update_: Februar 27, 2025

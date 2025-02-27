@@ -69,6 +69,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/Pustekuchen-Xanten/astro-website' },
   ],
   footNote: `
-    © 2024 Pustekuchen. Quellcode verfügbar auf <a class="text-black underline dark:text-muted" href="https://github.com/Pustekuchen-Xanten/astro-website">GitHub</a>.
+    © ${new Date().getFullYear()}  Pustekuchen. Quellcode verfügbar auf <a class="text-black underline dark:text-muted" href="https://github.com/Pustekuchen-Xanten/astro-website">GitHub</a>.
   `,
 };

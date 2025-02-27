@@ -9,6 +9,7 @@ import ItemGrid from '../ui/ItemGrid.astro';
 const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
+  subtitle2 = await Astro.slots.render('subtitle2'),
   tagline,
   content = await Astro.slots.render('content'),
   callToAction,
@@ -36,6 +37,7 @@ const {
   <Headline
     title={title}
     subtitle={subtitle}
+    subtitle2={subtitle2}
     tagline={tagline}
     classes={{
       container: 'max-w-xl sm:mx-auto lg:max-w-2xl',

@@ -23,7 +23,7 @@ Durch diese Vorgehensweise lädt die Website deutlich schneller und benötigt we
 
 ### Offen für alle: Unser Engagement in der Open-Source-Community
 
-Astro ist ein sogenanntes Open-Source-Projekt. Das bedeutet, dass der Quellcode für alle zugänglich ist und von Entwicklern weltweit verbessert werden kann. Auch unsere Website ist komplett Open Source. Wenn Sie möchten, können Sie den Code auf GitHub ansehen und vielleicht sogar selbst etwas dazu beitragen. Hier finden Sie den [Link zum Repository](https://github.com/Pustekuchen-Xanten/astro-website).
+Astro ist ein Open-Source-Projekt – das heißt, der Quellcode ist für alle zugänglich und wird von Entwicklern weltweit weiterentwickelt. Auch unsere Website ist Open Source! Wenn du neugierig bist, kannst du den Code auf GitHub anschauen und vielleicht sogar selbst etwas beitragen.  Hier finden Sie den [Link zum Repository](https://github.com/Pustekuchen-Xanten/astro-website).
 
 ### Ein modernes Design mit Astro Wind
 
@@ -38,6 +38,6 @@ Durch umfassende Anpassungen haben wir das Design genau auf unsere Bedürfnisse 
 
 Kontakt:
 
-[tobias@steltner.cloud](mailto:tobias@steltner.cloud)
+[tobias@steltner.cc](mailto:tobias@steltner.cc)
 
-[tobias.steltner.cloud](https://tobias.steltner.cloud)
+[www.steltner.cc](https://steltner.cc)

@@ -5,10 +5,10 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 ## Keine Cookies und Kein Cookie-Banner
 
-Fragen Sie sich, warum Sie auf unserer Website nicht mit Cookie- und Tracker-Einstellungen kämpfen müssen? Hier ist die Antwort.
+Hast du dich gewundert, warum du auf unserer Website nicht erst lästige Cookie-Einstellungen durchklicken musst? Ganz einfach: Wir verwenden überhaupt keine Cookies!
 
 ![image](https://pustekuchen-xanten.de/images/cookies.jpg)
 
-Wir verwenden auf unserer Website keinerlei Cookies. Unsere Seite besteht aus statisch generiertem HTML und wird mit [Astro](https://astro.build) (Static Site Generator) entwickelt. Dank dieser Technik können wir Ihnen die Inhalte ohne den Einsatz von Cookies bereitstellen.
+Unsere Seite basiert auf statisch generiertem HTML und wird mit Astro, einem modernen Static Site Generator, entwickelt. Dadurch können wir dir alle Inhalte ganz ohne Cookies anzeigen – schnell, sicher und ohne versteckte Datensammler.
 
-Unser Ziel ist es, Ihren Besuch auf unserer Website so angenehm und störungsfrei wie möglich zu gestalten. Diese Seite dient ausschließlich Ihrer Information, weshalb wir bewusst auf Tracking und Analyse-Tools verzichten, die Cookies erfordern würden.
+Unser Ziel ist es, dir eine angenehme und störungsfreie Erfahrung zu bieten. Da diese Website nur der Information dient, verzichten wir bewusst auf Tracking- und Analyse-Tools, die deine Daten erfassen würden. Dein Besuch bleibt privat – so, wie es sein sollte!
